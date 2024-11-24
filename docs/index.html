@@ -7,83 +7,128 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- 导航栏 -->
+    <!-- 顶部导航栏 -->
     <nav class="navbar">
-        <div class="logo">
-            <img src="images/byy-logo.png" alt="BYY NFT">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="images/BYY.png" alt="BYY NFT">
+            </div>
+            <div class="nav-links">
+                <a href="#dashboard" class="active">Dashboard</a>
+                <a href="#trading">Trading Hub</a>
+                <a href="#portfolio">Portfolio Overview</a>
+            </div>
         </div>
-        <div class="nav-links">
-            <a href="#dashboard">Dashboard</a>
-            <a href="#trading-hub">Trading Hub</a>
-            <a href="#portfolio">Portfolio Overview</a>
+
+        <div class="nav-center">
+            <div class="search-container">
+                <input type="search" placeholder="Search engine">
+                <button class="search-btn">🔍</button>
+            </div>
         </div>
+
         <div class="nav-right">
-            <div class="search-bar">
-                <input type="search" placeholder="Search">
+            <div class="user-controls">
+                <a href="#profile" class="icon-btn">👤</a>
+                <div class="language-dropdown">
+                    <button class="icon-btn" id="languageBtn">🌐</button>
+                    <div class="language-options" id="languageOptions">
+                        <div class="language-option">English</div>
+                        <div class="language-option">简体中文</div>
+                        <div class="language-option">繁體中文</div>
+                    </div>
+                </div>
+                <a href="#gift" class="icon-btn">🎁</a>
             </div>
-            <div class="language-select">
-                <select>
-                    <option value="en">English</option>
-                    <option value="zh">简体中文</option>
-                    <option value="zh-tw">繁體中文</option>
-                </select>
+            <div class="auth-buttons">
+                <button class="btn-login">Log In</button>
+                <button class="btn-signup">Sign Up</button>
             </div>
-            <a href="#profile" class="profile-icon">👤</a>
-            <a href="#gifts" class="gift-icon">🎁</a>
-            <button class="btn-login">Log In</button>
-            <button class="btn-signup">Sign Up</button>
         </div>
     </nav>
 
     <!-- 主要内容区域 -->
     <main class="main-content">
         <!-- Blind Box 区域 -->
-        <section class="blind-box-section">
-            <div class="blind-box-container">
-                <h2>Blind Box</h2>
-                <div class="box-display">
-                    <div class="hidden-style-preview">
-                        <img src="placeholder.jpg" alt="Hidden Style">
-                    </div>
-                    <div class="box-info">
-                        <div class="ranking">Ranking</div>
-                        <div class="price-prediction">Price Prediction</div>
+        <div class="blind-box-section">
+            <div class="action-cards">
+                <div class="action-card buy-card">
+                    <div class="card-text">Want to buy some NFTs?</div>
+                    <button class="btn-buy">BUY NOW!</button>
+                </div>
+                
+                <div class="blind-box-container">
+                    <div class="blind-box-title">
+                        <span class="b">B</span>
+                        <span class="l">l</span>
+                        <span class="i">i</span>
+                        <span class="n">n</span>
+                        <span class="d">d</span>
+                        <span class="space"> </span>
+                        <span class="b2">B</span>
+                        <span class="o">o</span>
+                        <span class="x">x</span>
                     </div>
                 </div>
-                <button class="surprise-btn">Surprise</button>
-            </div>
-        </section>
 
-        <!-- 交易区域 -->
-        <section class="trading-section">
-            <div class="buy-sell-container">
-                <div class="tabs">
-                    <button class="tab active">Buy</button>
-                    <button class="tab">Sell</button>
-                </div>
-                <div class="exchange-form">
-                    <!-- 交易表单内容 -->
+                <div class="action-card sell-card">
+                    <div class="card-text">Want to make profit easily?</div>
+                    <button class="btn-sell">SELL NOW!</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- 捐赠区域 -->
+        <div class="donation-section">
+            <h2 class="donation-title">We Wish You HAPPY</h2>
+            <p class="donation-text">
+                By making small donations,<br>
+                you help us persist and continue to make money for you!
+            </p>
+            
+            <div class="donation-input">
+                <div class="amount-container">
+                    <span class="dollar-sign">$</span>
+                    <input type="text" value="100" class="amount-input">
+                </div>
+                <div class="payment-methods">
+                    <button class="payment-btn alipay">
+                        <img src="images/alipay.png" alt="Alipay">
+                    </button>
+                    <button class="payment-btn wechat">
+                        <img src="images/wechat.png" alt="WeChat">
+                    </button>
+                    <button class="payment-btn paypal">
+                        <img src="images/paypal.png" alt="PayPal">
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- 页脚 -->
-    <footer>
+    <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>DASHBOARD</h3>
-                <ul>
-                    <li><a href="#prices">Real-time Gold Prices</a></li>
-                    <li><a href="#activity">Recent Activity</a></li>
-                    <li><a href="#risk">Risk Profile</a></li>
-                    <li><a href="#news">Market News</a></li>
-                </ul>
+            <div class="footer-sections">
+                <div class="footer-group">
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#subscribe">Subscribe Us</a>
+                </div>
+                <div class="footer-group">
+                    <a href="#disclaimer">Disclaimer</a>
+                    <a href="#cookies">Cookies Policy</a>
+                    <a href="#privacy">Privacy Policy</a>
+                </div>
+                <div class="footer-group">
+                    <a href="#terms">Terms of Services</a>
+                    <a href="#social">Social Media</a>
+                    <a href="#help">Help Center</a>
+                </div>
             </div>
-            <!-- 其他页脚部分 -->
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
