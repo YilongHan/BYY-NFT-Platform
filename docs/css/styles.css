@@ -1,56 +1,46 @@
-/* 重置默认样式 */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 全局变量 */
-:root {
-    --primary-bg: #ffffff;
-    --secondary-bg: #f4f4f4;
-    --text-color: #333333;
-    --primary-color: #007bff;
-}
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
     line-height: 1.6;
+    background-color: var(--background-color);
     color: var(--text-color);
 }
 
-/* 导航栏样式 */
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: var(--primary-bg);
+    background: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 40px;
 }
 
 .nav-links {
     display: flex;
     gap: 2rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 0.5rem 1rem;
+    margin-left: 2rem;
 }
 
 .nav-right {
+    margin-left: auto;
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-.search-container input {
-    padding: 0.5rem 1rem;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    outline: none;
 }
 
 .btn-login, .btn-signup {
@@ -60,19 +50,38 @@ body {
     cursor: pointer;
 }
 
-.btn-login {
-    background-color: transparent;
-    color: var(--text-color);
-}
-
 .btn-signup {
-    background-color: var(--text-color);
+    background-color: var(--primary-color);
     color: white;
 }
 
-/* 主要内容区域样式 */
 .main-content {
-    padding: 2rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Blind Box 样式 */
+.blind-box-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        margin: 1rem 0;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+    }
 }
