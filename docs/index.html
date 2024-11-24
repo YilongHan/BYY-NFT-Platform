@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>加密货币交易平台</title>
+    <title>BYY NFT Platform</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- 导航栏 -->
     <nav class="navbar">
-        <div class="logo">LOGO</div>
+        <div class="logo">
+            <img src="images/byy-logo.png" alt="BYY NFT">
+        </div>
         <div class="nav-links">
-            <a href="index.html">Dashboard</a>
-            <a href="trading.html">Trading Hub</a>
-            <a href="portfolio.html">Portfolio Overview</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#trading-hub">Trading Hub</a>
+            <a href="#portfolio">Portfolio Overview</a>
         </div>
         <div class="nav-right">
-            <div class="search-container">
+            <div class="search-bar">
                 <input type="search" placeholder="Search">
             </div>
-            <div class="notification">
-                <span class="icon">🔔</span>
+            <div class="language-select">
+                <select>
+                    <option value="en">English</option>
+                    <option value="zh">简体中文</option>
+                    <option value="zh-tw">繁體中文</option>
+                </select>
             </div>
+            <a href="#profile" class="profile-icon">👤</a>
+            <a href="#gifts" class="gift-icon">🎁</a>
             <button class="btn-login">Log In</button>
             <button class="btn-signup">Sign Up</button>
         </div>
@@ -29,8 +37,52 @@
 
     <!-- 主要内容区域 -->
     <main class="main-content">
-        <!-- 这里后续会添加更多内容 -->
+        <!-- Blind Box 区域 -->
+        <section class="blind-box-section">
+            <div class="blind-box-container">
+                <h2>Blind Box</h2>
+                <div class="box-display">
+                    <div class="hidden-style-preview">
+                        <img src="placeholder.jpg" alt="Hidden Style">
+                    </div>
+                    <div class="box-info">
+                        <div class="ranking">Ranking</div>
+                        <div class="price-prediction">Price Prediction</div>
+                    </div>
+                </div>
+                <button class="surprise-btn">Surprise</button>
+            </div>
+        </section>
+
+        <!-- 交易区域 -->
+        <section class="trading-section">
+            <div class="buy-sell-container">
+                <div class="tabs">
+                    <button class="tab active">Buy</button>
+                    <button class="tab">Sell</button>
+                </div>
+                <div class="exchange-form">
+                    <!-- 交易表单内容 -->
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DASHBOARD</h3>
+                <ul>
+                    <li><a href="#prices">Real-time Gold Prices</a></li>
+                    <li><a href="#activity">Recent Activity</a></li>
+                    <li><a href="#risk">Risk Profile</a></li>
+                    <li><a href="#news">Market News</a></li>
+                </ul>
+            </div>
+            <!-- 其他页脚部分 -->
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
