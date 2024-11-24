@@ -3,92 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Trading Platform</title>
-    <style>
-        :root {
-            --primary-gray: #F4F4F4;
-            --dark-gray: #333333;
-            --white: #FFFFFF;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
-
-        .navbar {
-            display: flex;
-            align-items: center;
-            padding: 1rem 2rem;
-            background: var(--white);
-            border-radius: 100px;
-            margin: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .logo {
-            width: 40px;
-            height: 40px;
-            background: var(--primary-gray);
-            border-radius: 50%;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            margin-left: 2rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--dark-gray);
-        }
-
-        .nav-right {
-            margin-left: auto;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .search-bar {
-            padding: 0.5rem 1rem;
-            border: none;
-            background: var(--primary-gray);
-            border-radius: 20px;
-        }
-
-        .btn {
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background: var(--dark-gray);
-            color: var(--white);
-        }
-    </style>
+    <title>加密货币交易平台</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- 导航栏 -->
     <nav class="navbar">
-        <div class="logo"></div>
+        <div class="logo">LOGO</div>
         <div class="nav-links">
-            <a href="#dashboard">Dashboard</a>
-            <a href="#trading-hub">Trading Hub</a>
-            <a href="#portfolio">Portfolio Overview</a>
+            <a href="index.html">Dashboard</a>
+            <a href="trading.html">Trading Hub</a>
+            <a href="portfolio.html">Portfolio Overview</a>
         </div>
         <div class="nav-right">
-            <input type="search" class="search-bar" placeholder="Search">
-            <button class="btn">Log In</button>
-            <button class="btn btn-primary">Sign Up</button>
+            <div class="search-container">
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="notification">
+                <span class="icon">🔔</span>
+            </div>
+            <button class="btn-login">Log In</button>
+            <button class="btn-signup">Sign Up</button>
         </div>
     </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 这里后续会添加更多内容 -->
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
