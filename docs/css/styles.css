@@ -1,87 +1,328 @@
-:root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --background-color: #f8f9fa;
-    --text-color: #212529;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-    line-height: 1.6;
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
+/* 导航栏样式 */
 .navbar {
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .logo img {
-    height: 40px;
+    height: 35px;
+    width: auto;
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem;
-    margin-left: 2rem;
+    gap: 20px;
 }
 
-.nav-right {
-    margin-left: auto;
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+/* 搜索框样式 */
+.search-container {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 15px;
 }
 
-.btn-login, .btn-signup {
-    padding: 0.5rem 1.5rem;
-    border-radius: 20px;
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 200px;
+    background: transparent;
+}
+
+.search-btn {
+    background: none;
     border: none;
     cursor: pointer;
 }
 
-.btn-signup {
-    background-color: var(--primary-color);
+/* 用户控制区域样式 */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 语言选择下拉菜单 */
+.language-dropdown {
+    position: relative;
+}
+
+.language-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 5px 0;
+    min-width: 120px;
+    margin-top: 5px;
+}
+
+.language-option {
+    padding: 8px 15px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.language-option:hover {
+    background-color: #f5f5f5;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login, .btn-signup {
+    padding: 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+}
+
+.btn-login {
+    background: #666;
     color: white;
 }
 
-.main-content {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+.btn-signup {
+    background: white;
+    border: 1px solid #666;
+    color: #666;
 }
 
-/* Blind Box 样式 */
+/* Blind Box 区域样式 */
 .blind-box-section {
-    background: white;
-    border-radius: 10px;
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #E6E6E6;
+}
+
+.action-cards {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.action-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 280px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card-text {
+    color: #FFD700;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.btn-buy, .btn-sell {
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-buy {
+    background: #007AFF;
+    color: white;
+}
+
+.btn-sell {
+    background: #007AFF;
+    color: white;
+}
+
+.blind-box-container {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    flex: 2;
+    text-align: center;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blind-box-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.blind-box-title span {
+    display: inline-block;
+}
+
+.blind-box-title .b { color: #4285F4; }
+.blind-box-title .l { color: #EA4335; }
+.blind-box-title .i { color: #FBBC05; }
+.blind-box-title .n { color: #4285F4; }
+.blind-box-title .d { color: #34A853; }
+.blind-box-title .b2 { color: #EA4335; }
+.blind-box-title .o { color: #FBBC05; }
+.blind-box-title .x { color: #4285F4; }
+
+/* 捐赠区域样式 */
+.donation-section {
+    background: #E6E6E6;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.donation-title {
+    color: #666;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.donation-text {
+    color: #007AFF;
+    font-size: 0.9rem;
+    line-height: 1.5;
     margin-bottom: 2rem;
+}
+
+.amount-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.dollar-sign {
+    color: #666;
+    margin-right: 0.5rem;
+}
+
+.amount-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.payment-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.payment-btn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: #E6E6E6;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.footer-group a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-group a:hover {
+    color: #333;
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding: 1rem;
+        gap: 10px;
     }
 
-    .nav-links {
-        margin: 1rem 0;
-    }
-
-    .nav-right {
+    .nav-left, .nav-right {
         width: 100%;
         justify-content: center;
+    }
+
+    .footer-sections {
+        flex-direction: column;
+        text-align: center;
     }
 }
