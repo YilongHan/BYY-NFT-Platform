@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload NFT - BYY NFT Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/upload-nft.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/BYY.png" alt="BYY NFT">
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <div class="search-container">
+                <input type="search" placeholder="Search engine">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="user-controls">
+                <a href="#profile" class="icon-btn">👤</a>
+                <div class="language-dropdown">
+                    <button class="icon-btn" id="languageBtn">🌐</button>
+                    <div class="language-options" id="languageOptions">
+                        <div class="language-option">English</div>
+                        <div class="language-option">简体中文</div>
+                        <div class="language-option">繁體中文</div>
+                    </div>
+                </div>
+                <a href="#gift" class="icon-btn">🎁</a>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn-login">Log In</button>
+                <button class="btn-signup">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 主要内容区域 -->    
+    <main class="upload-nft-main">
+        <h1>Upload Files</h1>
+
+        <!-- 文件上传区域 -->
+        <div class="upload-container">
+            <!-- 上传进度显示 -->
+            <div class="upload-progress">
+                <div class="progress-item">
+                    <span class="file-icon">📄</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <button class="pause-btn">⏸</button>
+                </div>
+            </div>
+
+            <!-- 拖放上传区域 -->
+            <div class="drop-zone">
+                <div class="drop-icon">⬆️</div>
+                <p>Drag & Drop</p>
+                <p>or <a href="#" class="browse-link">browse</a> your file</p>
+            </div>
+
+            <!-- 按钮组 -->
+            <div class="button-group">
+                <button class="btn-cancel">Cancel</button>
+                <button class="btn-submit">Submit</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-sections">
+                <div class="footer-group">
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#subscribe">Subscribe Us</a>
+                </div>
+                <div class="footer-group">
+                    <a href="#disclaimer">Disclaimer</a>
+                    <a href="#cookies">Cookies Policy</a>
+                    <a href="#privacy">Privacy Policy</a>
+                </div>
+                <div class="footer-group">
+                    <a href="#terms">Terms of Services</a>
+                    <a href="#social">Social Media</a>
+                    <a href="#help">Help Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
