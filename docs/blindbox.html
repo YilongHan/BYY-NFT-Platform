@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind Box - BYY NFT Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blindbox.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/BYY.png" alt="BYY NFT">
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <div class="search-container">
+                <input type="search" placeholder="Search engine">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="user-controls">
+                <a href="#profile" class="icon-btn">👤</a>
+                <div class="language-dropdown">
+                    <button class="icon-btn" id="languageBtn">🌐</button>
+                    <div class="language-options" id="languageOptions">
+                        <div class="language-option">English</div>
+                        <div class="language-option">简体中文</div>
+                        <div class="language-option">繁體中文</div>
+                    </div>
+                </div>
+                <a href="#gift" class="icon-btn">🎁</a>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn-login">Log In</button>
+                <button class="btn-signup">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="blindbox-main">
+        <!-- 盲盒展示区域 -->
+        <div class="blindbox-showcase">
+            <!-- 主图片预览 -->
+            <div class="main-preview">
+                <button class="nav-button prev">❮</button>
+                <div class="preview-container">
+                    <img src="images/hidden-version.png" alt="Hidden Version NFT">
+                </div>
+                <button class="nav-button next">❯</button>
+            </div>
+
+            <!-- 缩略图预览 -->
+            <div class="thumbnail-strip">
+                <div class="thumbnail active">
+                    <img src="images/hidden-version1.png" alt="Thumbnail 1">
+                </div>
+                <div class="thumbnail">
+                    <img src="images/hidden-version2.png" alt="Thumbnail 2">
+                </div>
+                <div class="thumbnail">
+                    <img src="images/hidden-version3.png" alt="Thumbnail 2">
+                </div>
+            </div>
+
+            <!-- Surprise按钮 -->
+            <button class="surprise-btn">Surprise</button>
+            <p class="warning-text">*We do not accept any cancellation requests after placing an order, please place your order with caution</p>
+        </div>
+
+        <!-- 价格预测区域 -->
+        <div class="price-prediction">
+            <h3>Price Prediction of NFTs</h3>
+            <div class="chart-container">
+                <canvas id="priceChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-sections">
+                <div class="footer-group">
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#subscribe">Subscribe Us</a>
+                </div>
+                <div class="footer-group">
+                    <a href="#disclaimer">Disclaimer</a>
+                    <a href="#cookies">Cookies Policy</a>
+                    <a href="#privacy">Privacy Policy</a>
+                </div>
+                <div class="footer-group">
+                    <a href="#terms">Terms of Services</a>
+                    <a href="#social">Social Media</a>
+                    <a href="#help">Help Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/blindbox.js"></script>
+</body>
+</html>
