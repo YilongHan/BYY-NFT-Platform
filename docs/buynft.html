@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy NFT - BYY NFT Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/buynft.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/BYY.png" alt="BYY NFT">
+                </a>
+            </div>
+        </div>
 
+        <div class="nav-center">
+            <div class="search-container">
+                <input type="search" placeholder="Search engine">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="user-controls">
+                <a href="#profile" class="icon-btn">👤</a>
+                <div class="language-dropdown">
+                    <button class="icon-btn" id="languageBtn">🌐</button>
+                    <div class="language-options" id="languageOptions">
+                        <div class="language-option">English</div>
+                        <div class="language-option">简体中文</div>
+                        <div class="language-option">繁體中文</div>
+                    </div>
+                </div>
+                <a href="#gift" class="icon-btn">🎁</a>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn-login">Log In</button>
+                <button class="btn-signup">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="buynft-main">
+        <!-- 类别选择 -->
+        <div class="category-tabs">
+            <button class="category-tab active">Opened Blind Box</button>
+            <button class="category-tab">Digital Artworks</button>
+            <button class="category-tab">Music</button>
+            <button class="category-tab">Game Coins</button>
+            <button class="category-tab">PFPs</button>
+        </div>
+
+        <!-- NFT展示区域 -->
+        <div class="nft-showcase">
+            <!-- 左侧动态展示区 -->
+            <div class="showcase-main">
+                <button class="nav-button prev">❮</button>
+                <div class="dynamic-demo">
+                    <div class="slider-container">
+                        <div class="slider">
+                            <img src="images/nft1.jpg" alt="NFT 1">
+                            <img src="images/nft2.jpg" alt="NFT 2">
+                            <img src="images/nft3.jpg" alt="NFT 3">
+                            <img src="images/nft4.jpg" alt="NFT 4">
+                            <img src="images/nft5.jpg" alt="NFT 5">
+                        </div>
+                    </div>
+                </div>
+                <button class="nav-button next">❯</button>
+                <!-- 缩略图预览 -->
+                <div class="thumbnail-strip">
+                    <div class="thumbnail active"><img src="images/nft1.jpg" alt="NFT 1 Thumbnail"></div>
+                    <div class="thumbnail"><img src="images/nft2.jpg" alt="NFT 2 Thumbnail"></div>
+                    <div class="thumbnail"><img src="images/nft3.jpg" alt="NFT 3 Thumbnail"></div>
+                    <div class="thumbnail"><img src="images/nft4.jpg" alt="NFT 4 Thumbnail"></div>
+                    <div class="thumbnail"><img src="images/nft5.jpg" alt="NFT 5 Thumbnail"></div>
+                </div>
+            </div>
+
+            <!-- 右侧介绍区域 -->
+            <div class="nft-info">
+                <div class="info-content">
+                    <h2>Introduction</h2>
+                    <!-- 这里可以添加具体的NFT介绍内容 -->
+                </div>
+                <button class="buy-now-btn">BUY NOW</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-sections">
+                <div class="footer-group">
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#subscribe">Subscribe Us</a>
+                </div>
+                <div class="footer-group">
+                    <a href="#disclaimer">Disclaimer</a>
+                    <a href="#cookies">Cookies Policy</a>
+                    <a href="#privacy">Privacy Policy</a>
+                </div>
+                <div class="footer-group">
+                    <a href="#terms">Terms of Services</a>
+                    <a href="#social">Social Media</a>
+                    <a href="#help">Help Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/buynft.js"></script>
+</body>
+</html>
