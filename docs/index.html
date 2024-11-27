@@ -7,16 +7,11 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- 顶部导航栏 -->
+    <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-left">
             <div class="logo">
                 <img src="images/BYY.png" alt="BYY NFT">
-            </div>
-            <div class="nav-links">
-                <a href="#dashboard" class="active">Dashboard</a>
-                <a href="#trading">Trading Hub</a>
-                <a href="#portfolio">Portfolio Overview</a>
             </div>
         </div>
 
@@ -52,13 +47,14 @@
         <!-- Blind Box 区域 -->
         <div class="blind-box-section">
             <div class="action-cards">
-                <div class="action-card buy-card">
-                    <div class="card-text">Want to buy some NFTs?</div>
-                    <button class="btn-buy">BUY NOW!</button>
+                <div class="action-card">
+                    <div class="card-text">Want to buy some NFT?</div>
+                    <div class="card-subtext">Let's help you earn future revenue!</div>
+                    <a href="buynft.html" class="btn-buy">BUY NOW!</a>
                 </div>
                 
                 <div class="blind-box-container">
-                    <div class="blind-box-title">
+                    <a href="blindbox.html" class="blind-box-title">
                         <span class="b">B</span>
                         <span class="l">l</span>
                         <span class="i">i</span>
@@ -68,12 +64,13 @@
                         <span class="b2">B</span>
                         <span class="o">o</span>
                         <span class="x">x</span>
-                    </div>
+                    </a>
                 </div>
 
-                <div class="action-card sell-card">
+                <div class="action-card">
                     <div class="card-text">Want to make profit easily?</div>
-                    <button class="btn-sell">SELL NOW!</button>
+                    <div class="card-subtext">Let's help you sell your NFT!</div>
+                    <a href="seller.html" class="btn-sell">SELL NOW!</a>
                 </div>
             </div>
         </div>
@@ -92,19 +89,32 @@
                     <input type="text" value="100" class="amount-input">
                 </div>
                 <div class="payment-methods">
-                    <button class="payment-btn alipay">
+                    <button class="payment-btn">
                         <img src="images/alipay.png" alt="Alipay">
                     </button>
-                    <button class="payment-btn wechat">
+                    <button class="payment-btn">
                         <img src="images/wechat.png" alt="WeChat">
                     </button>
-                    <button class="payment-btn paypal">
+                    <button class="payment-btn">
                         <img src="images/paypal.png" alt="PayPal">
                     </button>
                 </div>
             </div>
         </div>
     </main>
+
+    <div class="recommendations-section">
+        <h2>Personalized Recommendations</h2>
+    </div>
+    
+    <div class="features-container">
+        <div class="feature-box">
+            <h3>Real-time Trading Status</h3>
+        </div>
+        <div class="feature-box">
+            <h3>Decentralized Autonomous Organization</h3>
+        </div>
+    </div>
 
     <!-- 页脚 -->
     <footer class="footer">
@@ -129,6 +139,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
