@@ -1,0 +1,161 @@
+/* 主要内容区域样式 */
+.blindbox-main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* 盲盒展示区域 */
+.blindbox-showcase {
+    background: #E6E6E6;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px dashed #ccc;
+    margin-bottom: 30px;
+}
+
+/* 主预览区域 */
+.main-preview {
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    height: 400px; /* 固定高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* 防止图片溢出 */
+}
+
+.preview-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.preview-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* 保持图片比例 */
+    display: block;
+}
+
+/* 图片轮播控制按钮 */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button.prev {
+    left: 10px;
+}
+
+.nav-button.next {
+    right: 10px;
+}
+
+/* 缩略图条 */
+.thumbnail-strip {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden; /* 防止图片溢出 */
+    border: 2px solid transparent;
+}
+
+.thumbnail.active {
+    border-color: #007AFF;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保缩略图填满容器 */
+}
+
+/* Surprise按钮 */
+.surprise-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 12px 0;
+    background: #FFF8DC;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.warning-text {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* 价格预测区域 */
+.price-prediction {
+    background: #E6E6E6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.price-prediction h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.chart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: 300px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .blindbox-main {
+        padding: 10px;
+    }
+
+    .main-preview {
+        height: 300px;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}

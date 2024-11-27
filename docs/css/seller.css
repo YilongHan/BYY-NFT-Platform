@@ -1,0 +1,67 @@
+/* 主要内容区域样式 */
+.seller-main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* NFT选项卡片样式 */
+.nft-options {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.option-card {
+    flex: 1;
+    background: #E6E6E6;
+    border-radius: 10px;
+    padding: 30px;
+    text-decoration: none;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+}
+
+.option-icon {
+    font-size: 2rem;
+}
+
+.option-text h3 {
+    margin: 0;
+    color: #666;
+}
+
+/* 交易状态区域样式 */
+.trading-status {
+    background: #E6E6E6;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.trading-status h2 {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.status-content {
+    min-height: 300px;
+    /* 可以添加更多样式来展示交易状态 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nft-options {
+        flex-direction: column;
+    }
+
+    .option-card {
+        padding: 20px;
+    }
+}

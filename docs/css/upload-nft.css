@@ -1,0 +1,77 @@
+.upload-nft-main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upload-progress {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.progress-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 10px;
+    background: #E6E6E6;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 70%;
+    height: 100%;
+    background: #666;
+}
+
+.drop-zone {
+    background: #E6E6E6;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+}
+
+.drop-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.browse-link {
+    color: #007AFF;
+    text-decoration: underline;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-cancel {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #E6E6E6;
+    cursor: pointer;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #FFF8DC;
+    cursor: pointer;
+}
